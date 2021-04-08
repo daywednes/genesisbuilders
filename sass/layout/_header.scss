@@ -1,0 +1,64 @@
+.header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+        padding-top: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    @include respond(phone) {
+        height: 100vh;
+        padding-top: 12rem;
+    }
+
+    &__textbox {
+        max-width: 65rem;
+        text-align: center;
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        @include respond(tab-land) {
+            width: 35vw;
+            left: 8%;
+        }
+        @include respond(tab-port) {
+            min-width: 80vw;
+            position: static;
+            top: auto;
+            left: auto;
+            bottom: 1rem;
+            margin: 0 auto;
+            transform: translate(0, 0);
+        }
+
+        &-content {
+            color: $color-gray-dark;
+
+            @include respond(tab-port) {
+                margin: 0 auto;
+            }
+        }
+
+        &-text {
+            color: $color-gray;
+            margin-top: 2rem;
+            font-size: 2.2rem;
+            line-height: 1.6;
+
+            @include respond(tab-land) {
+                width: 35vw;
+            }
+            @include respond(tab-port) {
+                width: 100%;
+                margin: 3rem auto 0;
+                font-size: 2rem;
+            }
+        }
+    }
+}

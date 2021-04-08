@@ -1,0 +1,84 @@
+.card {
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+
+    @include respond(phone){
+        margin: 0;
+    }
+
+    &:hover {
+        transform: translateY(-0.5rem);
+        @include respond(tab-port){
+            transform: translateY(-1rem) rotate(-2deg);
+        }
+    }
+
+    &__wrapper {
+        margin: 1rem;
+        position: relative;
+        border-radius: 2rem;
+        padding: 2rem;
+        color: $color-gray;
+        text-align: center;
+        height: 100%;
+
+
+        @include respond(phone){
+            margin: 0 auto;
+            padding: 1rem;
+        }
+    }
+
+    &__details {
+        margin-top: 1rem;
+
+        @include respond(phone){
+            margin: 1rem auto ;
+        }
+    }
+
+    &__pic {
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        border-radius: 50%;
+        width: 70% !important;
+        transition: transform 1s ease-out;
+        box-shadow: 0rem 0.5rem 1.5rem 0.2rem rgba($color-gray,0.1);
+        
+        @include respond(phone){
+            width: 30% !important;
+        }
+    }
+
+    &__img-full {
+        width: auto!important;
+        max-width: 90%;
+        height: auto;
+    }
+
+    &__name {
+        text-transform: uppercase;
+        color: $color-gray-dark;
+        font-size: 2rem;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        color: $color-primary;
+    }
+
+    &__details {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        color: $color-gray;
+        text-align: center;
+    }
+}

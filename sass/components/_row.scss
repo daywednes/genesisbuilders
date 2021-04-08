@@ -1,0 +1,50 @@
+.row {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    width: 100%;
+    max-width: $grid-width;
+    width: 100%;
+    margin: 12rem auto;
+
+    @include respond(tab-land) { 
+        margin: 8rem auto;
+    }
+    @include respond(tab-port) { 
+        margin: 6rem auto;
+    }
+    @include respond(phone){
+        display: block;
+    }
+
+    &:last-child {
+        margin-bottom: 6rem;
+        @include respond(phone){
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__img {
+        // width: auto;
+        // height: 40rem;
+        width: 50%;
+        height: auto;
+        border-radius: 3rem;
+        box-shadow: 0.5rem 3rem 6rem 0rem rgba($color-primary-dark,0.1);
+
+        &-right {
+            order: -1;
+        }
+
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+    
+    &__text {
+        width: 42%;
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+}

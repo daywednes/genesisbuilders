@@ -1,1 +1,2 @@
-# genesisbuilders
+# gb
+Genesis Builders landing page

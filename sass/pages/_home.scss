@@ -1,0 +1,42 @@
+.section-about,
+.section-team,
+.section-partner,
+.section-portfolio {
+    position: relative;
+    padding: 6rem 15rem;
+    @include respond(tab-land) {
+        padding: 6rem 15rem;
+    }
+    @include respond(tab-port) {
+        padding: 6rem 10rem;
+    }
+    @include respond(phone) {
+        padding: 4rem;
+    }
+
+    .row {
+        position: relative;
+    }
+    
+    .btn {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        margin-top: 1.6rem;
+    }
+}
+
+.section-team { background-color: $color-gray-light;}
+
+.section-portfolio { background-color: rgba($color-gray-light, 0.4);}
+
+
+.section-partner{
+    padding-bottom: 10rem;
+    @include respond(tab-port) {
+        padding-bottom: 6rem;
+    }
+    @include respond(phone) {
+        padding-bottom: 3rem;
+    }
+}

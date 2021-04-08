@@ -1,28 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!doctype html>
-<html>
-  <head>
-    <title>Genesis Builders</title>
-    <meta name="cf-2fa-verify" content="1b9f9c6f780ec02">
-    <meta name="cf-2fa-verify" content="058291d8e3c8d68">
-  </head>
-  <body>
-    <div style="border:3px solid black;margin-left:25px;margin-top:25px;margin-right:25px;margin-bottom:25px;padding:2ex;width:650px;">
-      <header>
-        <h1 style="font-size:50px">Genesis Builders</h1>
-      </header>
-      <section>
-        <p> The fund for builders by builders </br></p>
-      </section>
-    <!--
-      <section>
-        <p>Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1e777078715e6e7172677d767f7770307d7f6e776a7f72">[email&#160;protected]</a></p>
-      </section>
-    -->
-      <footer>
-        <p> Our <a href="">Portfolio</a></p>
-      </footer>
-      </div>
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Genesis Builders</title>
+    </head>
+    <body>
+        <section class="content">
+            <nav class="nav">
+                <div class="nav__right">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a class="nav__link" href="#team">Team</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#partner">Partner</a></li>
+                    </ul>
+                    <div class="nav__icon menu">
+                        <div class="menu-bar"></div>
+                        <div class="menu-bar"></div>
+                        <div class="menu-bar"></div>
+                    </div>
+                </div>
+                <div class="nav__left">
+                    <a href ="#"><img src="img/logo.svg" alt="Genesis Builder logo" class="nav__logo"></a>
+                </div>
+            </nav>
+            <header class="header">
+                <div class="header__textbox">
+                    <h1 class="heading-primary header__textbox-content header__middle-1">Genesis Builders Fund</h1>
+                    <p class="header__textbox-text header__middle-1">An investment fund for Buiders by Builders.</p>
+                </div>
+            </header>       
+
+            <section class="section-team" id="team">
+                <h2 class="heading-secondary">Our Team</h2> 
+                <div class="grid">
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <img class="card__img u-grayscale" src="img/team/minh.jpg" alt="Minh Doan">
+                            <p class="card__name">Minh Doan </p> 
+                            <p class="card__title">Co-founder</p>
+                            <p class="card__details">co-founder of MassBit, co-founder of Codelight, ex-cofounder of Harmony ONE, ex-Googler.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <img class="card__img u-grayscale" src="img/team/chao-ma.jpg" alt="Chao Ma">
+                            <p class="card__name">Chao Ma</p> 
+                            <p class="card__title">Co-founder</p>
+                            <p class="card__details">CTO of deeper network, ex-Amazoner</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <img class="card__img u-grayscale" src="img/team/rongjian.jpg" alt="Rongjian Lan">
+                            <p class="card__name">Rongjian Lan</p> 
+                            <p class="card__title">Co-founder</p>
+                            <p class="card__details">CTO and co-founder of Harmony One, ex-Googler</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-portfolio" id="portfolio">
+                <h2 class="heading-secondary u-margin-bottom-medium">Portfolio</h2> 
+                <div class="grid">
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <div class="card__pic">
+                                <img class="card__img-full" src="img/portfolio/logo-chia.svg" alt="anchor">
+                            </div>
+                            <p class="card__details">A new blockchain and smart transaction platform that is easier to use, more efficient, and secure.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <div class="card__pic">
+                                <img class="card__img-full" src="img/portfolio/logo-deeper.png" alt="Efinity">
+                            </div>
+                            <p class="card__details">The Decentralized Internet Infrastructure for Web3.0</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <div class="card__pic">
+                                <img class="card__img-full" src="img/portfolio/logo-databricks.png" alt="Vega">
+                            </div>
+                            <p class="card__details">Databricks is the Data + AI company.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <div class="card__pic">
+                                <img class="card__img-full" src="img/portfolio/logo-do.png" alt="DigitalOcean">
+                            </div>
+                            <p class="card__details">DigitalOcean helps millions of developers easily build, test, manage, and scale applications of any size – faster than ever before.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-partner" id="partner">
+                <h2 class="heading-secondary">We are partnered with</h2>
+                <div class="grid">
+                    <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <img class="card__img" src="img/investors/m6.png" alt="m6">
+                            <p class="card__name">Momentum 6 </p> 
+                           </div>
+                    </div>
+                    <!-- <div class="col-1-of-4 card">
+                        <div class="card__wrapper">
+                            <img class="card__img" src="img/investors/GB.svg" alt="GB">
+                            <p class="card__name">Genesis Builder</p> 
+                            </div>
+                    </div> -->
+                </div>
+        </section>
+        <footer class= "footer">
+            <div class="grid footer__grid">
+                <div class="footer__brand">
+                    <a href ="#"><img src="img/logo-white.svg" alt="logo" class="footer__logo"></a>
+                </div>
+                <div class="footer__about">
+                    <div class="heading-tiny">About</div>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#team">Team</a></li>
+                        <li class="footer__item"><a href="#portfolio">Portfolio</a></li>
+                        <li class="footer__item"><a href="#partner">Partner</a></li>
+                    </ul>
+                </div>    
+                <div class="footer__social">
+                    <div class="heading-tiny">Official Channel</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" target="_blank">
+                                <img class="footer__icon" src="img/social/twitter.svg" alt="twitter">
+                                <p class="footer__text">Twitter</p>
+                            </a>
+                        </li>
+                        <!-- <li class="footer__item">
+                            <a href="" target="_blank">
+                                <img class="footer__icon" src="img/social/telegram.svg" alt="telegram">
+                                <p class="footer__text">Telegram</p>
+                            </a>
+                        </li> -->
+                        <li class="footer__item">
+                            <a href="" target="_blank">
+                                <img class="footer__icon" src="img/social/medium.svg" alt="medium">
+                                <p class="footer__text">Medium</p>
+                            </a>
+                        </li>
+                        <!-- <li class="footer__item">
+                            <a href="" target="_blank">
+                                <img class="footer__icon" src="img/social/discord.svg" alt="discord">
+                                <p class="footer__text">Discord</p>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    
 </html>
-
