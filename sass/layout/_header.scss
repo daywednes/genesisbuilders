@@ -4,14 +4,12 @@
     overflow: hidden;
 
     @include respond(tab-port) {
-        padding-top: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
     @include respond(phone) {
         height: 100vh;
-        padding-top: 12rem;
     }
 
     &__textbox {

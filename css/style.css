@@ -46,7 +46,7 @@ body {
   font-size: 1.8rem;
   letter-spacing: 0.03rem;
   line-height: 1.8;
-  color: #8a8a8b;
+  color: #818181;
   background-color: #fff;
   padding: 0;
   text-rendering: optimizeLegibility; }
@@ -170,7 +170,7 @@ body {
     position: relative;
     border-radius: 2rem;
     padding: 2rem;
-    color: #8a8a8b;
+    color: #818181;
     text-align: center;
     height: 100%; }
     @media only screen and (max-width: 37.5em) {
@@ -191,7 +191,7 @@ body {
     border-radius: 50%;
     width: 70% !important;
     transition: transform 1s ease-out;
-    box-shadow: 0rem 0.5rem 1.5rem 0.2rem rgba(138, 138, 139, 0.1); }
+    box-shadow: 0rem 0.5rem 1.5rem 0.2rem rgba(129, 129, 129, 0.1); }
     @media only screen and (max-width: 37.5em) {
       .card__img {
         width: 30% !important; } }
@@ -212,7 +212,7 @@ body {
   .card__details {
     font-size: 1.4rem;
     line-height: 1.4;
-    color: #8a8a8b;
+    color: #818181;
     text-align: center; }
 
 .row {
@@ -351,14 +351,12 @@ body {
   overflow: hidden; }
   @media only screen and (max-width: 56.25em) {
     .header {
-      padding-top: 20rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around; } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      height: 100vh;
-      padding-top: 12rem; } }
+      height: 100vh; } }
   .header__textbox {
     max-width: 65rem;
     text-align: center;
@@ -386,7 +384,7 @@ body {
         .header__textbox-content {
           margin: 0 auto; } }
     .header__textbox-text {
-      color: #8a8a8b;
+      color: #818181;
       margin-top: 2rem;
       font-size: 2.2rem;
       line-height: 1.6; }
@@ -420,7 +418,7 @@ body {
         background: rgba(237, 238, 243, 0.99);
         padding: 2rem;
         border-radius: 5px;
-        box-shadow: 1px 2px 0.5rem rgba(138, 138, 139, 0.2);
+        box-shadow: 1px 2px 0.5rem rgba(129, 129, 129, 0.2);
         transition: all 0.2s;
         margin: 5rem -3rem; } }
     .nav__menu.visible {
@@ -445,7 +443,7 @@ body {
       transform: scale(1.01); }
   .nav__link {
     text-decoration: none;
-    color: #8a8a8b;
+    color: #818181;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 0.5rem;
     font-size: 1.6rem;
@@ -482,13 +480,13 @@ body {
     box-shadow: 0 1px 1rem rgba(128, 128, 128, 0.2);
     border-bottom-left-radius: 5px; }
   .nav__sticky .nav__logo {
-    height: 5rem;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
+    height: 3.5rem;
+    margin-top: 1rem;
     background-color: transparent; }
   .nav__sticky .nav__right,
   .nav__sticky .nav__menu {
-    top: 0rem; }
+    top: 0rem;
+    transition: all ease-in 0.2s; }
 
 .menu {
   display: none;
@@ -501,7 +499,7 @@ body {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #8a8a8b;
+    background-color: #818181;
     border-radius: 2px;
     overflow: hidden; }
     .menu-bar:first-child {

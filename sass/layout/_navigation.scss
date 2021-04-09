@@ -13,7 +13,7 @@
         z-index: 100;
         transition: all 0.2s ease-in-out;
 
-        @include respond(tab-port){
+        @include respond(tab-port) {
             opacity: 0;
             visibility: hidden;
             z-index: 9999;
@@ -107,14 +107,14 @@
         border-bottom-left-radius: 5px;
     }  
     &__sticky &__logo{
-        height: 5rem;
-        margin-top: 0.5rem;
-        padding: 0.5rem 1rem;
+        height: 3.5rem;
+        margin-top: 1rem;
         background-color: transparent;
     }
     &__sticky &__right,
     &__sticky &__menu {
         top: 0rem;
+        transition: all ease-in 0.2s;
     }  
 }
 
