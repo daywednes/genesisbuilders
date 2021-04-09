@@ -3,14 +3,14 @@
     height: 100vh;
     overflow: hidden;
 
-    @include respond(tab-port) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    @include respond(phone) {
-        height: 100vh;
-    }
+    // @include respond(tab-port) {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-around;
+    // }
+    // @include respond(phone) {
+    //     height: 100vh;
+    // }
 
     &__textbox {
         max-width: 65rem;
@@ -20,20 +20,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-
-        @include respond(tab-land) {
-            width: 35vw;
-            left: 8%;
-        }
-        @include respond(tab-port) {
-            min-width: 80vw;
-            position: static;
-            top: auto;
-            left: auto;
-            bottom: 1rem;
-            margin: 0 auto;
-            transform: translate(0, 0);
-        }
 
         &-content {
             color: $color-gray-dark;
