@@ -26,5 +26,5 @@ $(document).ready(function(){
           $("body").find(".nav__menu").removeClass("visible");
         }
     });
-
+    bootstrap.Modal.getOrCreateInstance(document.getElementById('NotificationModal')).show();
 });
